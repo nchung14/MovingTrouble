@@ -5,15 +5,16 @@ Casting xyzzy is an action applying to nothing.
 Check casting xyzzy:
 	say "Watermelon."
 
-Include Secret Doors by Andrew Owen.
+Include Secret Doors by Andrew Owen. [extension has two cases where it says 'when when'. must be fixed before use]
 
 After reading a command:
 	if the player's command matches "take all":
-		replace the player's command with "";
+		replace the player's command with " ";
 		say "Nope."
 
 Understand "talk to [someone]" as Talking To. Talking To is an action applying to one thing.
 
+[unreachable containers and things used for setting conditions for the rest of the game]
 Other Dimension is an open container.
 Real World is an open container.  
 You is a thing in Real World.
@@ -27,6 +28,8 @@ After going through mirror:
 		now You is in Real World;
 	Otherwise:
 		continue the action.]
+		
+[preventative measures to stop player from taking items to other world and creating bugs]
 
 Instead of taking Clock:
 	if EnteredDimension is in Other Dimension:
@@ -83,9 +86,10 @@ When play begins:
 After getting off bed for first time:
 	say "You'd better get into some clean clothes before Elle gets here."
 
-Dirty Shirt is a wearable thing. [make it so you can't wear both shirts and pants at same time]The description is "An old polo shirt that you've been wearing for over a day. It doesn't smell too good."
+Dirty Shirt is a wearable thing.[make it so you can't wear both shirts and pants at same time]The description is "An old polo shirt that you've been wearing for over a day. It doesn't smell too good."
 Dirty Pants is a wearable thing. The description is "Jeans last forever, right? It's okay if you haven't washed these in the last two weeks, right?"
-Instead of putting on Clean Shirt:
+
+Instead of putting on Clean Shirt: [not working]
 	if player is wearing Dirty Shirt:
 		say "Putting on a clean shirt over the dirty one will only give you two dirty shirts. That's 200% more things to wash.";
 	otherwise:
@@ -121,8 +125,8 @@ Instead of taking Dead Spider:
 Clock is a thing in bedroom. The description is "5:00 PM".
 Calendar is a thing in bedroom. The description is "March 8, 2013".
 Suitcase is a closed openable container in the living room. The description is "The biggest suitcase you own filled with everything you could fit inside."
-Clean Shirt is a wearable thing in the suitcase. "[if player is wearing Clean Shirt]A nice collared black cotton shirt.[otherwise]A clean shirt you packed in your suitcase."
-Clean Pants is a wearable thing in the suitcase. "[if player is wearing Clean Pants]The first pair of clean jeans you've worn in two weeks.[otherwise]A clean pair of pants you packed in your suitcase."
+Clean Shirt is a wearable thing in the suitcase. The description is "[if player is wearing Clean Shirt]A nice collared black cotton shirt.[otherwise]A clean shirt you packed in your suitcase."
+Clean Pants is a wearable thing in the suitcase. The description is "[if player is wearing Clean Pants]The first pair of clean jeans you've worn in two weeks.[otherwise]A clean pair of pants you packed in your suitcase."
 
 Kitchen is a room. It is east of the living room. The description is "The Living Room is west."
 Table is a supporter in the kitchen. It is fixed in place. The description is "A small wooden table in the middle of the kitchen."
@@ -206,7 +210,7 @@ After wearing Clean Shirt:
 			now rug is in Living Room;
 			now Elle is in Living Room;
 			now Mail is in Living Room;
-				say "You open the front door and see Elle standing there. [paragraph break]'Hey you, got your mail. There's an party invitation from Sarah.' she says, smiling before walking in and looking around. 'Not the nicest place in the world,' she remarks, 'but I'm glad you finally found one-Ah!'[paragraph break] She suddenly trips on a rug and drops the mail in her hand. Huh, didn't even notice that there on the floor. You rush over and help her up. 'Sorry about that,' she laughs. 'We should probably do something about the rug though. If not, knowing me, this'lldefinitely y happen again.'".
+				say "You open the front door and see Elle standing there. [paragraph break]'Hey you, got your mail. There's an party invitation from Sarah.' she says, smiling before walking in and looking around. 'Not the nicest place in the world,' she remarks, 'but I'm glad you finally found one-Ah!'[paragraph break] She suddenly trips on a rug and drops the mail in her hand. Huh, didn't even notice that there on the floor. You rush over and help her up. 'Sorry about that,' she laughs. 'We should probably do something about the rug though. If not, knowing me, this'll definitely happen again.'".
 				
 Mail is a thing. Understand "Letter" as mail. The description is "Sarah Martin is a friend of Elle's. She's inviting you two to a party next weekend. You don't like her much but don't mind going along so long as you're with Elle."
 [Instead of taking mail:
@@ -248,7 +252,7 @@ Notroot beer1 is a thing.
 			say "'Hey did you bring me my root beer?' asks Elle.";
 			continue the action;
 	otherwise:
-		continue the action.]
+		continue the action.] [replaced]
 
 Check going to living room1:
 	if Elle is on couch1:
@@ -262,6 +266,8 @@ Instead of giving root beer1 to Elle:
 	now Elle has root beer1.
 Instead of giving pineapple juice1 to Elle:
 	say "'Hey now, I asked for some root beer,' says Elle."
+
+[items that serve as clues]
 Instead of taking mail1:
 	say "Elle sees you picking up the letter and notices that it looks different. 'Wait what?' Elle exclaimed, looking at it more closely. 'This isn't what I brought in earlier? And I was just with Sarah the other day! Help me figure out what's going on here. Let me know if you discover anything else that seems out of place until we can figure this out.'";
 	now Elle has mail1.
@@ -284,6 +290,7 @@ An every turn rule:
 					now escape is in other dimension;
 					now explanation is in real world.
 
+[responses for different outcomes and ends of the game]
 Instead of going east in Living Room1:
 	if Escape is in Other Dimension:
 		say "[line break]You run towards the kitchen, directly into her knife. Smooth.";
@@ -296,7 +303,7 @@ Instead of going west in Living Room1:
 		end the game in death;
 	otherwise:
 		continue the action.
-Instead of going north in Living Room1:
+Instead of opening front door1 in Living Room1:
 	if escape is in other dimension:
 		end the game saying "You have won.[line break]You burst through the front door with Elle and make it outside. However, everything is not how you remember it! The streets are backwards and have different names. Cars are driving at the red light and stopping at the green. You don't have time to stop though, you escape the crazy other Elle and run off into the city to begin a new life here."
 
@@ -337,9 +344,9 @@ Instead of going mirror in basement:
 	otherwise:
 		continue the action.
 
-[Understand "break [something]" or "hit [something]" or "punch [something]" or "shatter [mirror]" or "kick [mirror]" as breaking. breaking is an action applying to one thing.]
-Understand "break [something]" as breaking. Breaking is an action applying to one thing.
-Check breaking:
+[Understand "break [something]" or "hit [something]" or "punch [something]" or "shatter [mirror]" or "kick [mirror]" as breaking. breaking is an action applying to one thing.] [earlier attempt]
+Understand "break [something]" as notworking. notworking is an action applying to one thing.
+Check notworking:
 	if noun is mirror:
 		if escape is in other dimension:
 			say "You quickly lash out and break the mirror, shattering other Elle's image just as she was about to reach you. The shiny fragments fall to the ground as you and Elle are left standing alone in the poorly lit basement. You hug her tight and lead her up and out of the basement, before locking the door, and throwing away the key.";
@@ -356,6 +363,8 @@ Check breaking:
 		say "Yea, I'd kick that ugly couch too if I were you.";
 	otherwise:
 		say "Why would you break that? That costs money! If you had money to waste, you wouldn't have bought this crummy craigslist house."
+
+[Conditions for changing possible responses stacked and showed up together. These were taken out as all these messages are still communicated to the player automatically]
 
 [Check Talking To:
 	if noun is Elle:
