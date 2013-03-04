@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Skein rootNode="node-0x6ae020" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Zoom</generator>
+  <activeNode nodeId="node-0x6ae020" />
+  <item nodeId="node-0x6ae020">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+
+You&apos;ve just arrived at your new house. It&apos;s a little run down but hey, what did you expect from craigslist. Too bad you can&apos;t afford a nicer place yet.
+
+Inform Final Project
+An Interactive Fiction by Nolan Chung
+Release 1 / Serial number 130304 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Living Room
+You can see a Rug here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="4">NO</temporary>
+    <children>
+      <child nodeId="node-0x6ae070" />
+    </children>
+  </item>
+  <item nodeId="node-0x6ae070">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="4">YES</temporary>
+    <children>
+      <child nodeId="node-0x6ae0c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6ae0c0">
+    <command xml:space="preserve">x stairs</command>
+    <result xml:space="preserve">You see nothing special about Stairs.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="4">YES</temporary>
+    <children>
+      <child nodeId="node-0x6ae110" />
+    </children>
+  </item>
+  <item nodeId="node-0x6ae110">
+    <command xml:space="preserve">go stairs</command>
+    <result xml:space="preserve">(first opening Stairs)
+You can&apos;t, since Stairs leads nowhere.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3">YES</temporary>
+  </item>
+</Skein>
