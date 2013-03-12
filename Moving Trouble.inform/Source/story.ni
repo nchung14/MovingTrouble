@@ -17,9 +17,16 @@ Dirty Shirt is a wearable thing. [Must fix how examining self doens't show what 
 Dirty Pants is a wearable thing.
 
 Bedroom is a room. It is west of the Living Room. The description is "The Living Room is east."
-Bed is enterable supporter in the bedroom. 
+Bed is enterable supporter in the bedroom. The description is "Just a cheap matress. You don't have money to spare buying some fancy sleep number bed or whatever it is."
+Understand "get into [something]" as climbing. 
+Understand "get out of [something]" as climbing. [game looks round room everytime you get out of bed]
 Dresser is scenery supporter in bedroom. The description is "A small dresser in your bedroom. There is one big dresser drawer."
-Dresser Drawer is a closed openable container in bedroom. It is undescribed. [make it say you didn't unpack if player looks for clothes here]
+Dresser Drawer is a closed openable container in bedroom. It is undescribed.
+Instead of opening Dresser Drawer:
+	If player is wearing Dirty Shirt:
+		If player is wearing Dirty Pants:
+			say "You haven't unpacked your things yet. Your clothes must be in your suitcase somewhere."
+			[else have it describe contents or lack there of dresser]
 Clock is a thing on the Dresser. The description is "5:00 PM".
 Calender is a thing in bedroom. The description is "March 8, 2013".
 Suitcase is a closed openable container in the living room. The description is "The biggest suitcase you own filled with everything you could fit inside."
@@ -65,13 +72,13 @@ Calender1 is a thing in Bedroom1. The printed name is "Calender".
 
 After wearing Clean Shirt:
 	After wearing Clean Pants:
-		say "You here the doorbell ring"
+		say "[paragraph break] You here the doorbell ring"
 
 After wearing Clean Shirt:
 	After wearing Clean Pants:
 		instead of opening front door:
-			say "You open the front door and see Ellie standing there. [paragraph break]'Hey you.' she says, smiling before walking in. 'Not the nicest place in the world,' she remarks, 'but I'm glad you finally found one.'";
-			[Now Ellie is in Living Room.]
+			now Elle is in Living Room;
+			say "You open the front door and see Ellie standing there. [paragraph break]'Hey you.' she says, smiling before walking in. 'Not the nicest place in the world,' she remarks, 'but I'm glad you finally found one.'". [bring in mail and fall on rug]
 
 Elle is a woman. 
 	

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x6f1030" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x8b2b300" />
+  <activeNode nodeId="node-0x8aea440" />
   <item nodeId="node-0x6f1030">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -19,7 +19,7 @@ You&apos;ve just arrived at your new house a couple of hours ago but instantly c
 
 Inform Final Project
 An Interactive Fiction by Nolan Chung
-Release 1 / Serial number 130310 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 130311 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Bedroom (on Bed)
 The Living Room is east.
@@ -30,14 +30,14 @@ You can also see Calender here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="65">NO</temporary>
+    <changed>NO</changed>
+    <temporary score="188">NO</temporary>
     <children>
+      <child nodeId="node-0xfc3b0e0" />
       <child nodeId="node-0x6f1940" />
       <child nodeId="node-0x8af9dd0" />
       <child nodeId="node-0xe9af0a0" />
-      <child nodeId="node-0x6f22a0" />
-      <child nodeId="node-0x6f3120" />
+      <child nodeId="node-0x8a33f30" />
       <child nodeId="node-0x6f2c50" />
       <child nodeId="node-0x6f29b0" />
       <child nodeId="node-0x6f1b70" />
@@ -46,17 +46,7 @@ You can also see Calender here.
       <child nodeId="node-0x6f10b0" />
       <child nodeId="node-0x2d6130" />
       <child nodeId="node-0x6f1410" />
-      <child nodeId="node-0x8ad3570" />
     </children>
-  </item>
-  <item nodeId="node-0x8ad3570">
-    <command xml:space="preserve">put on dirty shirt</command>
-    <result xml:space="preserve">You&apos;re already wearing that!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="11">YES</temporary>
   </item>
   <item nodeId="node-0x6f1410">
     <command xml:space="preserve">x dresser</command>
@@ -325,13 +315,12 @@ You can see Suitcase (closed), Front Door, Rug and Couch here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="65">YES</temporary>
+    <temporary score="89">YES</temporary>
     <children>
-      <child nodeId="node-0x6f2860" />
-      <child nodeId="node-0x5e88e30" />
-      <child nodeId="node-0x6f2630" />
       <child nodeId="node-0x24cfa0" />
       <child nodeId="node-0x6f1f20" />
+      <child nodeId="node-0x6f2630" />
+      <child nodeId="node-0xf82d4f0" />
       <child nodeId="node-0x6424cd0" />
     </children>
   </item>
@@ -358,6 +347,152 @@ You can see Suitcase (closed), Front Door, Rug and Couch here.
     <changed>NO</changed>
     <temporary score="64">YES</temporary>
   </item>
+  <item nodeId="node-0xf82d4f0">
+    <command xml:space="preserve">take off dirty pants</command>
+    <result xml:space="preserve">You take off Dirty Pants.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="89">YES</temporary>
+    <children>
+      <child nodeId="node-0x8ace4c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x8ace4c0">
+    <command xml:space="preserve">take off dirty shirt</command>
+    <result xml:space="preserve">You take off Dirty Shirt.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="89">YES</temporary>
+    <children>
+      <child nodeId="node-0xfc8eff0" />
+    </children>
+  </item>
+  <item nodeId="node-0xfc8eff0">
+    <command xml:space="preserve">open suitcase</command>
+    <result xml:space="preserve">You open Suitcase, revealing Clean Shirt and Clean Pants.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="89">YES</temporary>
+    <children>
+      <child nodeId="node-0x8bde890" />
+    </children>
+  </item>
+  <item nodeId="node-0x8bde890">
+    <command xml:space="preserve">put on clean shirt</command>
+    <result xml:space="preserve">(first taking Clean Shirt)
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="89">YES</temporary>
+    <children>
+      <child nodeId="node-0xfcc78a0" />
+    </children>
+  </item>
+  <item nodeId="node-0xfcc78a0">
+    <command xml:space="preserve">put on clean pants</command>
+    <result xml:space="preserve">(first taking Clean Pants)
+You here the doorbell ring
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="89">YES</temporary>
+    <children>
+      <child nodeId="node-0xfc289e0" />
+    </children>
+  </item>
+  <item nodeId="node-0xfc289e0">
+    <command xml:space="preserve">open door</command>
+    <result xml:space="preserve">(Front Door)
+You open the front door and see Ellie standing there. 
+
+&quot;Hey you.&quot; she says, smiling before walking in. &quot;Not the nicest place in the world,&quot; she remarks, &quot;but I&apos;m glad you finally found one.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="89">YES</temporary>
+    <children>
+      <child nodeId="node-0x8b20100" />
+    </children>
+  </item>
+  <item nodeId="node-0x8b20100">
+    <command xml:space="preserve">x elle</command>
+    <result xml:space="preserve">You see nothing special about Elle.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="88">YES</temporary>
+  </item>
+  <item nodeId="node-0x6f2630">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Kitchen
+The Living Room is west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="49">YES</temporary>
+    <children>
+      <child nodeId="node-0x6f26a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6f26a0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Living Room
+The Bedroom is west. The Kitchen is east.
+
+You can see Rug here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="49">YES</temporary>
+    <children>
+      <child nodeId="node-0x6f2710" />
+    </children>
+  </item>
+  <item nodeId="node-0x6f2710">
+    <command xml:space="preserve">x rug</command>
+    <result xml:space="preserve">A hidden door under the rug? Cliche much.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="49">YES</temporary>
+    <children>
+      <child nodeId="node-0x6f2780" />
+    </children>
+  </item>
+  <item nodeId="node-0x6f2780">
+    <command xml:space="preserve">take rug</command>
+    <result xml:space="preserve">A hidden door under the rug? Cliche much.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="49">YES</temporary>
+    <children>
+      <child nodeId="node-0x6f27f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6f27f0">
+    <command xml:space="preserve">drop rug</command>
+    <result xml:space="preserve">Rug is already here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="48">YES</temporary>
+  </item>
   <item nodeId="node-0x6f1f20">
     <command xml:space="preserve">take rug</command>
     <result xml:space="preserve">A hidden door under the rug? Cliche much.
@@ -368,17 +503,7 @@ You can see Suitcase (closed), Front Door, Rug and Couch here.
     <temporary score="92">YES</temporary>
     <children>
       <child nodeId="node-0x6f2000" />
-      <child nodeId="node-0x6f1f90" />
     </children>
-  </item>
-  <item nodeId="node-0x6f1f90">
-    <command xml:space="preserve">move rug</command>
-    <result xml:space="preserve">Nothing obvious happens.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="14">YES</temporary>
   </item>
   <item nodeId="node-0x6f2000">
     <command xml:space="preserve">down</command>
@@ -708,129 +833,6 @@ You&apos;re not wearing that.
     <changed>YES</changed>
     <temporary score="41">YES</temporary>
   </item>
-  <item nodeId="node-0x6f2630">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-Kitchen
-The Living Room is west.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
-    <children>
-      <child nodeId="node-0x6f26a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6f26a0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Living Room
-The Bedroom is west. The Kitchen is east.
-
-You can see Rug here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
-    <children>
-      <child nodeId="node-0x6f2710" />
-    </children>
-  </item>
-  <item nodeId="node-0x6f2710">
-    <command xml:space="preserve">x rug</command>
-    <result xml:space="preserve">A hidden door under the rug? Cliche much.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
-    <children>
-      <child nodeId="node-0x6f2780" />
-    </children>
-  </item>
-  <item nodeId="node-0x6f2780">
-    <command xml:space="preserve">take rug</command>
-    <result xml:space="preserve">A hidden door under the rug? Cliche much.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="49">YES</temporary>
-    <children>
-      <child nodeId="node-0x6f27f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6f27f0">
-    <command xml:space="preserve">drop rug</command>
-    <result xml:space="preserve">Rug is already here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="48">YES</temporary>
-  </item>
-  <item nodeId="node-0x5e88e30">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Bedroom
-The Living Room is east.
-
-On Dresser is Alarm Clock.
-
-You can also see Bed and Calender here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="9">YES</temporary>
-    <children>
-      <child nodeId="node-0x8bc3b20" />
-    </children>
-  </item>
-  <item nodeId="node-0x8bc3b20">
-    <command xml:space="preserve">take bed</command>
-    <result xml:space="preserve">That&apos;s fixed in place.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="8">YES</temporary>
-  </item>
-  <item nodeId="node-0x6f2860">
-    <command xml:space="preserve">down</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="9">YES</temporary>
-    <children>
-      <child nodeId="node-0x6f28d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x6f28d0">
-    <command xml:space="preserve">take rug</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="9">YES</temporary>
-    <children>
-      <child nodeId="node-0x6f2940" />
-    </children>
-  </item>
-  <item nodeId="node-0x6f2940">
-    <command xml:space="preserve">x rug</command>
-    <result xml:space="preserve">A hidden door under the rug? Cliche much.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="8">YES</temporary>
-  </item>
   <item nodeId="node-0x6f29b0">
     <command xml:space="preserve">x east</command>
     <result xml:space="preserve">You see nothing unexpected in that direction.
@@ -984,50 +986,292 @@ You can see Strange Mirror here.
     <changed>YES</changed>
     <temporary score="29">YES</temporary>
   </item>
-  <item nodeId="node-0x6f3120">
-    <command xml:space="preserve">gonear bedroom1</command>
-    <result xml:space="preserve">Bedroom
-On Dresser is Alarm Clock1.
-
-You can also see Bed1 here.
+  <item nodeId="node-0x8a33f30">
+    <command xml:space="preserve">get off bed</command>
+    <result xml:space="preserve">You&apos;d better get into some clean clothes before Ellie gets here.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="14">YES</temporary>
+    <temporary score="188">YES</temporary>
     <children>
-      <child nodeId="node-0x6f3190" />
+      <child nodeId="node-0xf8aae50" />
     </children>
   </item>
-  <item nodeId="node-0x6f3190">
-    <command xml:space="preserve">x dresser</command>
-    <result xml:space="preserve">On Dresser is Alarm Clock1.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="14">YES</temporary>
-    <children>
-      <child nodeId="node-0x6f3200" />
-    </children>
-  </item>
-  <item nodeId="node-0x6f3200">
-    <command xml:space="preserve">x dresser1</command>
-    <result xml:space="preserve">On Dresser is Alarm Clock1.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="13">YES</temporary>
-  </item>
-  <item nodeId="node-0x6f22a0">
+  <item nodeId="node-0xf8aae50">
     <command xml:space="preserve">get in bed</command>
     <result xml:space="preserve">You get onto Bed.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="5">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0xf80e050" />
+    </children>
+  </item>
+  <item nodeId="node-0xf80e050">
+    <command xml:space="preserve">get off bed</command>
+    <result xml:space="preserve">You get off Bed.
+
+Bedroom
+The Living Room is east.
+
+On Dresser is Clock.
+
+You can also see Bed and Calender here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0x6ed6a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x6ed6a0">
+    <command xml:space="preserve">get in bed</command>
+    <result xml:space="preserve">You get onto Bed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0xfcec5d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xfcec5d0">
+    <command xml:space="preserve">get off bed</command>
+    <result xml:space="preserve">You get off Bed.
+
+Bedroom
+The Living Room is east.
+
+On Dresser is Clock.
+
+You can also see Bed and Calender here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0xfc30450" />
+    </children>
+  </item>
+  <item nodeId="node-0xfc30450">
+    <command xml:space="preserve">x dresser</command>
+    <result xml:space="preserve">(Dresser)
+A small dresser in your bedroom. There is one big dresser drawer.
+
+On Dresser is Clock.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0x8ace2a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x8ace2a0">
+    <command xml:space="preserve">open dresser drawer</command>
+    <result xml:space="preserve">You haven&apos;t unpacked your things yet. Your clothes must be in your suitcase somewhere.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0xf831860" />
+    </children>
+  </item>
+  <item nodeId="node-0xf831860">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Living Room
+The Bedroom is west. The Kitchen is east. The Front Door is north.
+
+You can see Suitcase (closed), Front Door, Rug and Couch here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0x8a01bb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x8a01bb0">
+    <command xml:space="preserve">open suitcase</command>
+    <result xml:space="preserve">You open Suitcase, revealing Clean Shirt and Clean Pants.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0xfc591f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xfc591f0">
+    <command xml:space="preserve">take off dirty shirt</command>
+    <result xml:space="preserve">You take off Dirty Shirt.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0xfc385d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xfc385d0">
+    <command xml:space="preserve">take off dirty pants</command>
+    <result xml:space="preserve">You take off Dirty Pants.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0xfc556b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xfc556b0">
+    <command xml:space="preserve">put on clean shirt</command>
+    <result xml:space="preserve">(first taking Clean Shirt)
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0xe998280" />
+    </children>
+  </item>
+  <item nodeId="node-0xe998280">
+    <command xml:space="preserve">put on clean pants</command>
+    <result xml:space="preserve">(first taking Clean Pants)
+
+
+ You here the doorbell ring
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0xfc3ce50" />
+    </children>
+  </item>
+  <item nodeId="node-0xfc3ce50">
+    <command xml:space="preserve">x door</command>
+    <result xml:space="preserve">(Front Door)
+You see nothing special about Front Door.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0xfc7fe60" />
+    </children>
+  </item>
+  <item nodeId="node-0xfc7fe60">
+    <command xml:space="preserve">open front door</command>
+    <result xml:space="preserve">You open the front door and see Ellie standing there. 
+
+&quot;Hey you.&quot; she says, smiling before walking in. &quot;Not the nicest place in the world,&quot; she remarks, &quot;but I&apos;m glad you finally found one.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0xfcbea30" />
+    </children>
+  </item>
+  <item nodeId="node-0xfcbea30">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Kitchen
+The Living Room is west.
+
+You can see Table here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0x8a52230" />
+    </children>
+  </item>
+  <item nodeId="node-0x8a52230">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Living Room
+The Bedroom is west. The Kitchen is east. The Front Door is north.
+
+You can see Elle, Suitcase (empty), Front Door, Rug and Couch here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0x658bc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x658bc0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Bedroom
+The Living Room is east.
+
+On Dresser is Clock.
+
+You can also see Bed and Calender here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0x12baba50" />
+    </children>
+  </item>
+  <item nodeId="node-0x12baba50">
+    <command xml:space="preserve">open dresser</command>
+    <result xml:space="preserve">(Dresser)
+That&apos;s not something you can open.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0xfc139f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xfc139f0">
+    <command xml:space="preserve">open dresser drawer</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="188">YES</temporary>
+    <children>
+      <child nodeId="node-0x8aea440" />
+    </children>
+  </item>
+  <item nodeId="node-0x8aea440">
+    <command xml:space="preserve">x drawer</command>
+    <result xml:space="preserve">You see nothing special about Dresser Drawer.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="187">YES</temporary>
   </item>
   <item nodeId="node-0xe9af0a0">
     <command xml:space="preserve"></command>
@@ -1208,5 +1452,81 @@ A hidden door under the rug? Cliché much.겷
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="42">YES</temporary>
+  </item>
+  <item nodeId="node-0xfc3b0e0">
+    <command xml:space="preserve">get out of bed</command>
+    <result xml:space="preserve">I don&apos;t think much is to be achieved by that.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0x12b7fde0" />
+    </children>
+  </item>
+  <item nodeId="node-0x12b7fde0">
+    <command xml:space="preserve">get into bed</command>
+    <result xml:space="preserve">But you&apos;re already on Bed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0xfc55790" />
+    </children>
+  </item>
+  <item nodeId="node-0xfc55790">
+    <command xml:space="preserve">get in bed</command>
+    <result xml:space="preserve">But you&apos;re already on Bed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0xe985840" />
+    </children>
+  </item>
+  <item nodeId="node-0xe985840">
+    <command xml:space="preserve">get off bed</command>
+    <result xml:space="preserve">You&apos;d better get into some clean clothes before Ellie gets here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0x12b59b10" />
+    </children>
+  </item>
+  <item nodeId="node-0x12b59b10">
+    <command xml:space="preserve">get in bed</command>
+    <result xml:space="preserve">You get onto Bed.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="110">YES</temporary>
+    <children>
+      <child nodeId="node-0xe9a24d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xe9a24d0">
+    <command xml:space="preserve">get off bed</command>
+    <result xml:space="preserve">You get off Bed.
+
+Bedroom
+The Living Room is east.
+
+On Dresser is Clock.
+
+You can also see Bed and Calender here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="109">YES</temporary>
   </item>
 </Skein>
